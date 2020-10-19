@@ -25,8 +25,6 @@ function draw() {
  // console.log(balloon1)
   spawnBalloons();
   drawSprites();
-  textSize(20);
-  text("hello", balloon.x, balloon.y);
 }
 
 // Function spawn balloon 
@@ -50,7 +48,8 @@ function spawnBalloons() {
               break;
       default: break;
     }
-   
+    textSize(20);
+    text("hello", balloon.x, balloon.y);
 
     console.log(balloon);
     //assign scale and lifetime to the balloon           
